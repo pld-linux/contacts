@@ -15,6 +15,7 @@ BuildRequires:	gtk+2-devel >= 2:2.10.7
 #BuildRequires:	libglade2-devel >= 1:2.6.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 1:2.6.27
+Requires(post,postun):	hicolor-icon-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -54,6 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %post
+%update_icon_cache hicolor
 %gconf_schema_install contacts.schemas
 %scrollkeeper_update_post
 
@@ -62,6 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %postun
 %scrollkeeper_update_postun
+%update_icon_cache hicolor
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
