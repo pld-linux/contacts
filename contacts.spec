@@ -1,5 +1,5 @@
 #
-Summary:	tiny GNOME address book applet
+Summary:	Tiny GNOME address book applet
 Name:		contacts
 Version:	0.5
 Release:	1
