@@ -1,5 +1,5 @@
-#
 Summary:	Tiny GNOME address book applet
+Summary(pl.UTF-8):	Mały aplet książki adresowej dla GNOME
 Name:		contacts
 Version:	0.5
 Release:	1
@@ -15,7 +15,10 @@ BuildRequires:	gtk+2-devel >= 2:2.10.7
 #BuildRequires:	libglade2-devel >= 1:2.6.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 1:2.6.27
+BuildRequires:	rpmbuild(macros) >= 1.198
+Requires(post,preun):	GConf2
 Requires(post,postun):	hicolor-icon-theme
+Requires(post,postun):	scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,6 +28,15 @@ contact data that exists in your Evolution addressbook is accessible
 via Contacts. Contacts features advanced vCard field type handling and
 is designed for use on hand-held devices, such as the Nokia 770 or the
 Sharp Zaurus series of PDAs.
+
+%description -l pl.UTF-8
+Contacts to mała, lekka książka adresowa wykorzystująca libebook -
+część EDS. Jest to ta sama biblioteka, której używa GNOME Evolution,
+więc wszystkie dane kontaktowe istniejące w książce adresowej
+Evolution są dostępne poprzez Contacts. Contacts ma obsługę
+zaawansowanych typów pól vCard, jest zaprojektowany do używania na
+urządzeniach przenośnych, takich jak Nokia 770 albo PDA z serii Sharp
+Zaurus.
 
 %prep
 %setup -q
