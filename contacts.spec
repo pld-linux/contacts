@@ -8,13 +8,14 @@ Group:		Applications/Communications
 Source0:	http://pimlico-project.org/sources/contacts/%{name}-%{version}.tar.gz
 # Source0-md5:	d2150fe286ee6e0518af37f3107cb867
 URL:		http://pimlico-project.org/contacts.html
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	evolution-data-server-devel
+BuildRequires:	evolution-data-server-devel >= 1.2
 BuildRequires:	gtk+2-devel >= 2:2.10.7
-#BuildRequires:	libglade2-devel >= 1:2.6.0
+BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 1:2.6.27
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.198
 Requires(post,preun):	GConf2
 Requires(post,postun):	hicolor-icon-theme
