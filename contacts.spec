@@ -85,7 +85,10 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/gconf/schemas/contacts.schemas
 %{_desktopdir}/contacts.desktop
-%{_iconsdir}/hicolor/*/apps/contacts.png
-%exclude %{_iconsdir}/hicolor/26x26/apps/contacts.png
+%{_iconsdir}/hicolor/16x16/apps/contacts.png
+%{_iconsdir}/hicolor/22x22/apps/contacts.png
+%{_iconsdir}/hicolor/24x24/apps/contacts.png
+%{_iconsdir}/hicolor/32x32/apps/contacts.png
+%{_iconsdir}/hicolor/48x48/apps/contacts.png
 %{_iconsdir}/hicolor/scalable/apps/contacts.svg
 %{_mandir}/man1/contacts.1*
