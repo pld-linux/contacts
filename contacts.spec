@@ -1,12 +1,12 @@
 Summary:	Tiny GNOME address book applet
 Summary(pl.UTF-8):	Mały aplet książki adresowej dla GNOME
 Name:		contacts
-Version:	0.5
+Version:	0.7
 Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://pimlico-project.org/sources/contacts/%{name}-%{version}.tar.gz
-# Source0-md5:	d2150fe286ee6e0518af37f3107cb867
+# Source0-md5:	2117d9c96ce0d142eca957450794d876
 URL:		http://pimlico-project.org/contacts.html
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
@@ -85,5 +85,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/gconf/schemas/contacts.schemas
 %{_desktopdir}/contacts.desktop
-%{_iconsdir}/hicolor/48x48/apps/contacts.png
+%{_iconsdir}/hicolor/*/apps/contacts.png
+%{_iconsdir}/hicolor/scalable/apps/contacts.svg
 %{_mandir}/man1/contacts.1*
