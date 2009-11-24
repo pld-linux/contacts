@@ -1,12 +1,12 @@
 Summary:	Tiny GNOME address book applet
 Summary(pl.UTF-8):	Mały aplet książki adresowej dla GNOME
 Name:		contacts
-Version:	0.10
+Version:	0.11
 Release:	1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://download.gnome.org/sources/contacts/0.10/%{name}-%{version}.tar.bz2
-# Source0-md5:	2078475973e309944743b197c63fbdf3
+Source0:	http://download.gnome.org/sources/contacts/0.11/%{name}-%{version}.tar.bz2
+# Source0-md5:	2b5daf07af307b8089e8ff913414390a
 URL:		http://pimlico-project.org/contacts.html
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
