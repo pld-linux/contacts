@@ -11,6 +11,8 @@ URL:		http://pimlico-project.org/contacts.html
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	evolution-data-server-devel >= 1.2
+BuildRequires:	gettext-devel
+BuildRequires:	gnome-vfs2-devel
 BuildRequires:	gtk+2-devel >= 2:2.10.7
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libtool
