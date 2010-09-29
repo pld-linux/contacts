@@ -1,12 +1,12 @@
 Summary:	Tiny GNOME address book applet
 Summary(pl.UTF-8):	Mały aplet książki adresowej dla GNOME
 Name:		contacts
-Version:	0.11
-Release:	1
+Version:	0.12
+Release:	2
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://download.gnome.org/sources/contacts/0.11/%{name}-%{version}.tar.bz2
-# Source0-md5:	2b5daf07af307b8089e8ff913414390a
+Source0:	http://download.gnome.org/sources/contacts/0.12/%{name}-%{version}.tar.bz2
+# Source0-md5:	0bb01fc7479a497550ea5f2e0035b9d8
 URL:		http://pimlico-project.org/contacts.html
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
@@ -21,7 +21,6 @@ BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.198
 Requires(post,preun):	GConf2
 Requires(post,postun):	hicolor-icon-theme
-Requires(post,postun):	scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -53,8 +52,7 @@ Zaurus.
 %{__automake}
 %{__autoconf}
 %configure \
-	--disable-schemas-install \
-	--disable-scrollkeeper
+	--disable-schemas-install
 %{__make}
 
 %install
