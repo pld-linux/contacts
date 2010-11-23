@@ -2,7 +2,7 @@ Summary:	Tiny GNOME address book applet
 Summary(pl.UTF-8):	Mały aplet książki adresowej dla GNOME
 Name:		contacts
 Version:	0.12
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://download.gnome.org/sources/contacts/0.12/%{name}-%{version}.tar.bz2
